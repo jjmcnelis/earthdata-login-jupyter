@@ -11,11 +11,17 @@ Passwords are entered securely and aren't retained after the session inits. Ther
 ![prompt](docs/prompt.PNG)               
 *Run the authentication script like an import all.*
 
+------------------------------------------------------------------------------
+
 ![password](docs/prompt2.PNG)                   
 *Password entered securely with Python's `getpass` module.*
 
+------------------------------------------------------------------------------
+
 ![prompt](docs/success.png)                     
 *Successful login.*
+
+------------------------------------------------------------------------------
 
 ![prompt](docs/fail.PNG)                         
 *Failed login. Prompts repeatedly for new credentials; hangs Jupyter session until valid username and password are provided.*
