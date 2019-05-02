@@ -1,18 +1,18 @@
 # earthdata-login-jupyter
 A script that spawns a simple and secure widget for authenticating with NASA Earthdata in Jupyter environment.
 
-### Run the script like an import all:
 ![prompt](docs/prompt.PNG)
-### Password is entered securely with Python's `getpass` module
-![prompt](docs/prompt.PNG)
-### Successful login:
-![prompt](docs/prompt.PNG)
-### Successful login:
-![prompt](docs/prompt.PNG)
+*Run the authentication script like an import all.*
 
+![password](docs/prompt2.PNG)
+*Password entered securely with Python's `getpass` module.*
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-*Simple text login prompt.*
+![prompt](docs/success.png)
+*Successful login.*
+
+![prompt](docs/fail.PNG)
+*Failed login. Prompts repeatedly for new user credentials; hangs the Jupyter session until a valid username and password are provided.*
+
 
 [ursjupyter.py](ursjupyter.py) is just a widgetized version of the **Python 3** authentication example (that uses the `requests` module) given at this link:
 https://wiki.earthdata.nasa.gov/display/EL/How+To+Access+Data+With+Python
