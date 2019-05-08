@@ -22,10 +22,12 @@ class EarthdataLogin(requests.Session):
     TEST = ("https://daac.ornl.gov/daacdata/daymet/"  # ORNL DAAC Daymet
             "Daymet_V3_Annual_Climatology/data/"      # granule to touch to
             "daymet_v3_prcp_annttl_2017_pr.tif")      # test authentication; 
-    # registration prompt
-    REGISTER = HTML("<p style='font-weight:bold'><a href=https://urs.earth"
-                    "data.nasa.gov/users/new target='_blank'>Click here to"
-                    " register an Earthdata account.</a></p>")
+    
+    REGISTER = HTML(                                  # registration prompt
+        "<img src='docs/earthdata.jpg' alt='Earthdata Header'>"
+        "<p style='font-weight:bold'><a href=https://urs.earth"
+        "data.nasa.gov/users/new target='_blank'>Click here to"
+        " register a NASA Earthdata account.</a></p>")
                               
     
     def __init__(self):
