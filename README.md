@@ -1,10 +1,10 @@
 # earthdata-login-jupyter
 A script that spawns a simple and secure widget for authenticating with NASA Earthdata in Jupyter environment.
 
-[ursjupyter.py](ursjupyter.py) is just a widgetized version of the **Python 3** authentication example (that uses the `requests` module) given at this link:
+[ursjupyter.py](ursjupyter.py) is just a modified version of one of the examples (the one that uses the `requests` module) provided at this link:
 https://wiki.earthdata.nasa.gov/display/EL/How+To+Access+Data+With+Python
 
-Passwords are entered securely and aren't retained after the session inits. There is one hack-y piece; authentication is tested against an ORNL DAAC Daymet granule (just a few KB), so that granule's download statistics are artificially inflated no doubt. Looking for suggestions on an alternative to that.
+Passwords are entered securely and aren't retained after the session is created.
 
 ------------------------------------------------------------------------------
 
