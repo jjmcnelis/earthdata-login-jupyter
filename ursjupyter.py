@@ -10,8 +10,7 @@ if sys.version_info.major==2:
 
 class EarthdataLogin(requests.Session):
     """
-    Prompt user for Earthdata credentials repeatedly until auth success. Test
-    by attempting to download 44kb Daymet granule. Source:
+    Prompt user for Earthdata credentials repeatedly until auth success. Source:
     https://wiki.earthdata.nasa.gov/display/EL/How+To+Access+Data+With+Python
     """
 
@@ -19,12 +18,9 @@ class EarthdataLogin(requests.Session):
     
     ERROR = "Login failed ({0}). Retry or register."  # failure message
     
-    TEST = ("https://daac.ornl.gov/daacdata/daymet/"  # ORNL DAAC Daymet
-            "Daymet_V3_Annual_Climatology/data/"      # granule to touch to
-            "daymet_v3_prcp_annttl_2017_pr.tif")      # test authentication; 
+    TEST = ("https://daac.ornl.gov/daacdata/")        # test authentication; 
     
     REGISTER = HTML(                                  # registration prompt
-        "<img src='docs/earthdata.jpg' alt='Earthdata Header'>"
         "<p style='font-weight:bold'><a href=https://urs.earth"
         "data.nasa.gov/users/new target='_blank'>Click here to"
         " register a NASA Earthdata account.</a></p>")
